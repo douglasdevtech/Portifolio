@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'kdam thmor pro', sans-serif;
+}
+
+li:hover {
+    color: yellow;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://external-preview.redd.it/fMRY7dg2IT8iQi1JkYAmYB-wdeGNqfcgji2xoZKBUDs.jpg?auto=webp&s=953d4c0d1304daf3f56dbd621cc171b60c98b413');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color:red;
+    font-size: 19px;
+    font-family:'kdam thmor pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: aliceblue;
+    color: red;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: yellow;
+    color: red;
+}   
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+.banner-1 {
+    background-image: url('http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcR8rWXVJ3ljSLAw8gKzmsRe18FsFRqD59lo3wUIG_u1-HCOX2uSRm1qudFwTr1eGMeP');
+}
+
+.banner-2 {
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRijC3a7kn4I9VST6H_fQbwzlgKGkBOK67L0wed8aEgWeOQIf-I');
+}
+
+.banner-3 {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMzA3ZmNjNGEtMWI5Yi00ZTY4LWJlMWEtM2Y2YTM3Yjg0MTkwXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdam thmor pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    #banner {
+    width: 100%;
+    height: 300px;
+    }
+
+    #trailer-container {
+        width: auto;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .content {
+       width: 95%;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .trailer {
+     width: 100%;
+    }
+
+    #sinopse {
+       width: 95%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
+
+    #contact {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .informacoes-1 {
+    color: red;
+    font-size: xx-large;
+   }
+
+   .informacoes-2 {
+    color: red;
+    font-size: x-large;
+   }
+
+   .informacoes-3 {
+    color: red;
+    font-size: x-large;
+   }
+
+   #elenc {
+    color: red;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .elenco {
+    font-size: x-large;
+   }
+   
+   .banner-4 {
+    background-image: url('http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTGzJySsJWVZqvegInIYcH1BvO0-8qShJK7bjU_yyrka7hef1Ri9eLLViKBJb7XKcsp');
+   }
+
+   .banner-5 {
+    background-image: url('http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQL4RxPd5odz8F5bkeLq7LokFpO0jPIk2SFxtCaUOqWxWPR-TLxB4ZwqLzjnrx7OzOy');
+   }
+
+   .banner-6 {
+    background-image: url('http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSgXmC4eaf6jiZ_MUhp0x4lL4wJt7AnTNmSY7GXv4ZFFDoO8NWXNoStcUHGyx1wvtaQ');
+   }
+
+   .banner-7 {
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv0NonJSaRqacW_-m4w6aWeT0Z2t3AN8WVN4XXhbwSVTBpNrKH');
+   }
+
+   .banner-8 {
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSlZd5-MZ3Gpc8M5PRjuNLKdocnb8rGOV3z2_zNu-LgEFcgKER');
+   }
+
+   .banner-9 {
+    background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXxbpxQsnD0rhnEy3fV4aX7BtKG3JKYHNKi-pfPSlp1qU6R0ME');
+   }
+
+   #campo {
+    color: red;
+    font-size: xx-large;
+    margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#text {
+    color: #fff
+}
+
+
